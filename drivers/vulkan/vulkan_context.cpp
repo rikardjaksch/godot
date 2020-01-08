@@ -28,6 +28,8 @@
 /* SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.                */
 /*************************************************************************/
 
+#ifdef VULKAN_ENABLED
+
 #include "vulkan_context.h"
 #include "core/engine.h"
 #include "core/print_string.h"
@@ -1479,3 +1481,5 @@ VulkanContext::VulkanContext() {
 
 VulkanContext::~VulkanContext() {
 }
+
+#endif // #ifdef VULKAN_ENABLED
